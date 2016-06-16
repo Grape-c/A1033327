@@ -5,10 +5,7 @@
 	<title>2-2</title>
 </head>
 <body>
-    $dbserver=mysqli_connect($a,"root","sal55960310","upload");
-    mysqli_query($dbserver,"set names utf8");
-    mysqli_select_db($dbserver,"upload");
-    $.ajax(options);
+   
 
 	<!--使用ajax從後台抓出資料-->
 	<form>
@@ -28,4 +25,10 @@
 </body>
 </html>
 
+<?php
+ $conni=mysqli_connect('localhost','rootphp','classforphp','2');	
+ mysqli_query($dbserver,"set names utf8");
+ mysqli_select_db($dbserver,"upload");
+ $.ajax(options);
+?>
 
